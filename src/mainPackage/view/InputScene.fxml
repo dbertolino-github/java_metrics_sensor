@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@StyleSheets.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.view.InputSceneCtrl">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="800.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="400.0">
+               <children>
+                  <Hyperlink fx:id="srcChooserLink" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#chooseSrc" prefHeight="30.0" prefWidth="400.0" scaleShape="false" stylesheets="@StyleSheets.css" text="DIRECTORY CHOOSER">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="80.0" right="20.0" />
+                     </padding>
+                  </Hyperlink>
+                  <TextField fx:id="srcDir" alignment="CENTER" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" prefHeight="30.0" prefWidth="200.0" promptText="src directory" scaleShape="false" stylesheets="@StyleSheets.css">
+                     <VBox.margin>
+                        <Insets left="80.0" right="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="400.0">
+               <children>
+                  <Hyperlink fx:id="jarChooserLink" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#ChooseJar" prefHeight="30.0" prefWidth="400.0" scaleShape="false" stylesheets="@StyleSheets.css" text="JAR CHOOSER">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="20.0" right="80.0" />
+                     </padding>
+                  </Hyperlink>
+                  <TextField fx:id="jarDir" alignment="CENTER" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" prefHeight="30.0" prefWidth="200.0" promptText="optional jar file directory" scaleShape="false" stylesheets="@StyleSheets.css">
+                     <VBox.margin>
+                        <Insets left="20.0" right="80.0" />
+                     </VBox.margin></TextField>
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="400.0" prefWidth="200.0">
+         <children>
+            <ListView fx:id="metricsList" accessibleRole="LIST_ITEM" cacheShape="false" centerShape="false" focusTraversable="false" prefHeight="350.0" prefWidth="700.0" scaleShape="false" visible="false">
+               <HBox.margin>
+                  <Insets bottom="25.0" left="50.0" top="25.0" />
+               </HBox.margin>
+            </ListView>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Hyperlink fx:id="clearLink" alignment="CENTER_RIGHT" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#clear" prefHeight="30.0" prefWidth="400.0" scaleShape="false" stylesheets="@StyleSheets.css" text="clear">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </Hyperlink>
+            <Hyperlink fx:id="calculateMetricsLink" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#calculateMetrics" prefHeight="30.0" prefWidth="400.0" scaleShape="false" stylesheets="@StyleSheets.css" text="compute">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Hyperlink>
+         </children>
+      </HBox>
+   </children>
+</VBox>

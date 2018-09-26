@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.view.PrintSceneCtrl">
+   <children>
+      <Hyperlink fx:id="directoryChooser" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#chooseOutput" prefHeight="30.0" prefWidth="800.0" scaleShape="false" text="directory chooser">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </Hyperlink>
+      <TextField fx:id="outPutDir" alignment="CENTER" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" prefHeight="30.0" prefWidth="500.0" promptText="output directory" scaleShape="false">
+         <VBox.margin>
+            <Insets left="150.0" right="150.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="outPutName" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" prefHeight="30.0" prefWidth="500.0" promptText="file name" scaleShape="false">
+         <VBox.margin>
+            <Insets left="150.0" right="150.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <Hyperlink fx:id="printLink" alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" onAction="#print" prefHeight="30.0" prefWidth="800.0" scaleShape="false" text="print">
+         <VBox.margin>
+            <Insets top="80.0" />
+         </VBox.margin>
+      </Hyperlink>
+   </children>
+</VBox>

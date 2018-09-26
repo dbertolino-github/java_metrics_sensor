@@ -1,0 +1,35 @@
+.approved {
+    -fx-control-inner-background: lightgreen;
+}
+
+.notApproved {
+    -fx-control-inner-background: rgba(255,40,8,0.45);
+}
+
+.hyperlink {
+    -fx-font-family: sans-serif;
+    -fx-text-fill: dodgerblue;
+    -fx-underline:false;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #0406ff;
+    -fx-underline: false;
+}
+
+#clearLink {
+    -fx-text-fill: crimson;
+}
+#clearLink:hover {
+    -fx-text-fill: darkred;
+}
+#calculateMetricsLink{
+    -fx-text-fill: lightgreen;
+}
+
+#calculateMetricsLink:hover {
+    -fx-text-fill: darkgreen;
+}
+
+
+

@@ -30,7 +30,7 @@ The software is built on top of ANTLR4 compiler generated with an open-source Ja
  # INFO
 
 The "generated" package contains classes generated with ANTLR4 thanks to an open source Java8 grammar.
-The software can take in inpu:
+The software can take in input:
  - single java class or a folder in which it will automatically search for all java classes.
  - (OPTIONAL) jar file in which it will search for the compiled classes previously found as code.
 

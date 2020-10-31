@@ -1,4 +1,7 @@
 # A tool to analyse Java code quality 
+
+__For complete documentation about the work, please refer to bachelor_thesis.pdf__
+
 The aim of this tool is to receive in input Java code or Java compiled code and calculates the following quality metrics:
 * Lines of code (LOC) 
 * Number of methods and number of public methods (NOM - NPM) 
@@ -13,8 +16,6 @@ The aim of this tool is to receive in input Java code or Java compiled code and 
 * Coupling between objects (CBO) 
 * Depth of Inheritance tree (DIT) 
 * Number of Children (NOC)
-
-__For complete documentation about these metrics, please refer to PDF file in the CODE section__
 
 The software is built on top of ANTLR4 compiler generated with an open-source Java8 grammar. It provides a JavaFX GUI and the possibility to print the results in three different .csv files, each one represents a depth level of the analysis: Overview, Classes and single methods.
 
